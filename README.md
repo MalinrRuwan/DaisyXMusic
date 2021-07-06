@@ -30,7 +30,7 @@
 
 Get pyrogram (p)  `SESSION` from here:
 
-[![Run on Repl.it](https://replit.com/@MIDHUNKMKM/StringGen)
+[![Run on Repl.it](https://repl.it/badge/github/MIDHUNKMKM/StringGen)](https://replit.com/@MIDHUNKMKM/StringGen)
 
 ### ⚔ Self-hosting (For Devs) 
 ```sh
