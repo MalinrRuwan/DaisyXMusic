@@ -34,13 +34,13 @@ Get pyrogram (p)  `SESSION` from here:
 
 ### ⚔ Self-hosting (For Devs) 
 ```sh
-# Install Git First (apt-instll git)
+# Install Git First (apt-get install git)
 $ git clone https://github.com/TeamDaisyX/DaisyXmusic
 $ cd DaisyXMusic
 # Upgrade sources
 # Install All Requirements 
-$ pip3 install -r requirements.txt
-# Fork This Repo and fill local.env and config.py both with your own values.Then Start The Bot
+$ pip3 install -U -r requirements.txt
+# Fork This Repo and fill config.py vars with your own values.Then Start The Bot
 $ python3 -m DaisyXMusic
 ```
 
@@ -66,6 +66,8 @@ $ python3 -m DaisyXMusic
 - `/resume` - resume song play
 - `/skip` - play next song
 - `/end` - stop music play
+- `/mute` - mute song play
+- `/unmute` - unmute song play
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
 - `/admincache` - Refresh admin list
@@ -85,6 +87,8 @@ For linked group admins only:
 - `/cresume` - resume song play
 - `/cskip` - play next song
 - `/cend` - stop music play
+- `/cmute` - mute song play
+- `/cunmute` - unmute song play
 - `/userbotjoinchannel` - invite assistant to your chat
 * channel is also can be used instead of c
 
@@ -105,25 +109,34 @@ If you donlt like to play in linked channel:
 - `.da` - disapproove someone to pm you
 + Sudo Users can execute any command in any groups
 
-### Credits
-Don't edit this part
 
-#### Special Credits
-- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
 
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork daisyxmusic won't exist. 
-DaisyXmusic is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic) for fit the needs of @DaisyXbot users
+### Inspiration
+- [Callsmusic](http://github.com/callsmusic/callsmusic)
+- [tgvc-userbot](https://github.com/callsmusic/tgvc-userbot)
 
-#### Contribtors
-- [InukaASiTH](https://github.com/InukaAsith): Dev
-- [Technical-Hunter](https://github.com/Technical-Hunter): Dev
-- [Rojserbest](http://github.com/rojserbest): Dev
+This project is inspired on the hard work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork daisyxmusic won't exist. 
+Also DaisyXmusic is inspired by many opensource bots and userbots
+
+#### Contributors
+- [InukaAsith](https://github.com/InukaAsith): Dev / Owner
+- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev / Owner
+- [Technical-Hunter](https://github.com/Technical-Hunter): Dev / Owner
+- [Hellboy-OP](https://github.com/hellboy-op)
+- [Roj Serbest](http://github.com/rojserbest): Developer of callsmusic 
+- [DeshadeethThisarana](https://github.com/deshadeeth-thisarana): Dev
 - [Wrench](https://github.com/EverythingSuckz/): Dev
 - [Bemro](https://github.com/bemroofficial): Dev
 - [QueenArzoo](https://github.com/QueenArzoo): Dev
-- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
-- [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma): 
-- [ImJanindu](https://github.com/ImJanindu): 
-- [MARSHALX](https://github.com/MarshalX): TgCalls
-- [Original Repo owners](https://github.com/CallsMusic/CallsMusic)
+- [Anjana-Ma](https://github.com/Anjana-Ma): Dev
+- [ImJanindu](https://github.com/ImJanindu): Dev
+- [azimazizov9150](https://github.com/azimazizov9150): Contributor
+
+
+## Copyright & License 👮
+
+ - Copyright (C) 2020 - 2021 by [TeamDaisyX](github.com/teamdaisyx) ❤️️
+ - Licensed under the terms of the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](https://github.com/TeamDaisyX/DaisyXMusic/blob/master/LICENSE)
+    
+DaisyXMusic is Free Software: You can use, study share and improve it at your will. Specifically you can redistribute and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.    
+## Made with ♥️ by [TeamDaisyX](https://github.com/TeamDaisyX)

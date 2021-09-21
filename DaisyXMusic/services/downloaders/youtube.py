@@ -24,7 +24,8 @@ from DaisyXMusic.config import DURATION_LIMIT
 from DaisyXMusic.helpers.errors import DurationLimitError
 
 ydl_opts = {
-    "format": "bestaudio[ext=m4a]",
+    "format": "bestaudio/best",
+    "verbose": True,
     "geo-bypass": True,
     "nocheckcertificate": True,
     "outtmpl": "downloads/%(id)s.%(ext)s",
@@ -39,12 +40,14 @@ def download(url: str) -> str:
 
     if duration > DURATION_LIMIT:
         raise DurationLimitError(
-            f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)"
+            f"🛑 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, "
+            f"the provided video is {duration} minute(s)",
         )
     try:
         ydl.download([url])
     except:
         raise DurationLimitError(
-            f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)"
+            f"🛑 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, "
+            f"the provided video is {duration} minute(s)",
         )
     return path.join("downloads", f"{info['id']}.{info['ext']}")
