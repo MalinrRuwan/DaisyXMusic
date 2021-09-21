@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# PokersMusic (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -19,6 +19,6 @@ from os import listdir, mkdir
 if "raw_files" not in listdir():
     mkdir("raw_files")
 
-from DaisyXMusic.services.converter.converter import convert
+from PokersMusic.services.converter.converter import convert
 
 __all__ = ["convert"]

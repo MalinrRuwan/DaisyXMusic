@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# PokersMusic (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -19,14 +19,14 @@ import logging
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from DaisyXMusic.config import (
+from PokersMusic.config import (
     BOT_USERNAME,
     PROJECT_NAME,
     SOURCE_CODE,
     SUPPORT_GROUP,
     UPDATES_CHANNEL,
 )
-from DaisyXMusic.modules.msg import Messages as tr
+from PokersMusic.modules.msg import Messages as tr
 
 logging.basicConfig(level=logging.INFO)
 

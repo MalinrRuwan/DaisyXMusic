@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# PokersMusic (Telegram bot project )
 # Copyright (C) 2021  Inukaasith
 
 # This program is free software: you can redistribute it and/or modify
@@ -17,8 +17,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.services.callsmusic.callsmusic import remove
+from PokersMusic.helpers.channelmusic import get_chat_id
+from PokersMusic.services.callsmusic.callsmusic import remove
 
 
 @Client.on_message(filters.voice_chat_ended)

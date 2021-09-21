@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project)
+# PokersMusic (Telegram bot project)
 # Copyright (C) 2021  Inukaasith
 # Copyright (C) 2021  TheHamkerCat (Python_ARQ)
 # This program is free software: you can redistribute it and/or modify
@@ -31,22 +31,22 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
-from DaisyXMusic.config import ARQ_API_KEY
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.function.admins import admins as a
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.channelmusic import get_chat_id
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.filters import command, other_filters
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from PokersMusic.config import ARQ_API_KEY
+from PokersMusic.config import BOT_NAME as bn
+from PokersMusic.config import DURATION_LIMIT
+from PokersMusic.config import UPDATES_CHANNEL as updateschannel
+from PokersMusic.config import que
+from PokersMusic.function.admins import admins as a
+from PokersMusic.helpers.admins import get_administrators
+from PokersMusic.helpers.channelmusic import get_chat_id
+from PokersMusic.helpers.decorators import authorized_users_only
+from PokersMusic.helpers.filters import command, other_filters
+from PokersMusic.helpers.gets import get_file_name
+from PokersMusic.services.callsmusic import callsmusic
+from PokersMusic.services.callsmusic import client as USER
+from PokersMusic.services.converter.converter import convert
+from PokersMusic.services.downloaders import youtube
+from PokersMusic.services.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
@@ -985,7 +985,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add @PokersMusic to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)

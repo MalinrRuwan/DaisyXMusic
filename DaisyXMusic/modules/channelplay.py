@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project)
+# PokersMusic (Telegram bot project)
 # Copyright (C) 2021  Inukaasith
 # Copyright (C) 2021  TheHamkerCat (Python_ARQ)
 # This program is free software: you can redistribute it and/or modify
@@ -24,19 +24,19 @@ from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.modules.play import arq, cb_admin_check, generate_cover
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from PokersMusic.config import BOT_NAME as bn
+from PokersMusic.config import DURATION_LIMIT
+from PokersMusic.config import UPDATES_CHANNEL as updateschannel
+from PokersMusic.config import que
+from PokersMusic.helpers.admins import get_administrators
+from PokersMusic.helpers.decorators import authorized_users_only
+from PokersMusic.helpers.gets import get_file_name
+from PokersMusic.modules.play import arq, cb_admin_check, generate_cover
+from PokersMusic.services.callsmusic import callsmusic
+from PokersMusic.services.callsmusic import client as USER
+from PokersMusic.services.converter.converter import convert
+from PokersMusic.services.downloaders import youtube
+from PokersMusic.services.queues import queues
 
 chat_id = None
 
@@ -682,7 +682,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your channel due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        "\n\nOr manually add @PokersMusic to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
